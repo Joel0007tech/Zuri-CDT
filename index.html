@@ -6,6 +6,8 @@
     <title>Check My Student ID</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
    <nav>
@@ -23,13 +25,49 @@
             </form>
         </div>
         <div class="sub-nav-link__first">
-            <li>Postcode lists</li>
-        <li>Postcode maps</li>
+            <div style="display: flex;">
+                <li>Postcode lists</li>
+                <div class="dropdown">
+                    <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggleDropdown()">
+                        arrow_drop_down
+                        </span>
+                    <div id="dropdown-content">
+                      <a href="#">Option 1</a>
+                      <a href="#">Option 2</a>
+                      <a href="#">Option 3</a>
+                    </div>
+                  </div>
+            </div>
+            <div style="display: flex;">
+                <li>Postcode maps</li>
+                <div class="dropdown">
+                    <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggleDropdown()">
+                        arrow_drop_down
+                        </span>
+                    <div id="dropdown-content">
+                      <a href="#">Option 1</a>
+                      <a href="#">Option 2</a>
+                      <a href="#">Option 3</a>
+                    </div>
+                  </div>
+            </div>
         <li>Nearest postcodes</li>
         <li>Postcode lottery</li>
         </div>
     </div>
-   <li style="padding-top: 10px;">Help and information</li>
+    <div style="display: flex;">
+        <li>Help and Information</li>
+        <div class="dropdown">
+            <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggleDropdown()">
+                arrow_drop_down
+                </span>
+            <div id="dropdown-content">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a href="#">Option 3</a>
+            </div>
+          </div>
+    </div>
 </div>
        
     </ul>
@@ -74,12 +112,18 @@
     <input type="text" placeholder="e.g. city, region, district or specific hotel, home, apartment....." style="padding: 10px;"/>
     <input type="date" name="" id="" style="padding:10px; font-family: Arial, Helvetica, sans-serif;"/>
     <input type="submit" value="Search" style="background-color: #008cba; 
-    color: white; padding: 10px; border: 2px solid white; font-family: Arial, Helvetica, sans-serif; cursor: pointer;">
+    color: white; padding: 10px; border: 2px solid white; font-family: Arial, Helvetica, sans-serif; cursor: pointer;"/>
 </form>
-<a href="" style="text-decoration: none; font-family: Arial, Helvetica, sans-serif;
- background-color:#daa300; color:#765907; height:35px; margin-top: 3px;
-  padding-top: 7px; padding-right: 10px; padding-left: 10px;
- border: 1px solid #ffe295; border-radius: 3px; position:relative; left: 100px;">Guests</a>
+<div style="display: flex;
+background-color:#daa300; color:#765907; height:35px; margin-top: 3px;
+ padding-top:3px; padding-right: 10px; padding-left: 10px;
+border: 1px solid #ffe295; border-radius: 3px; position:relative; left: 75px; gap: 4px;">
+    <span class="material-symbols-outlined">
+        groups
+        </span>
+        <a href="" style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; position: relative; top:7px;">Guests</a>
+</div>
+    
     </div>
     </div>
     <div style="display: flex; gap: 5px; position: relative; bottom:43px;">
@@ -87,8 +131,11 @@
         <a href="">
             <div style="display: flex; flex-direction:column; position: relative;
              top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
+             <div style="display: flex;">
+                <span class="flag-icon flag-icon-sun"></span>
                 <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Trondheim ✝
                 </p>
+             </div>
                 <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
                  </div>
         </a>

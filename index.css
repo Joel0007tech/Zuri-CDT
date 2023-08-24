@@ -173,9 +173,6 @@ justify-content: space-between;
     #mobile-dropdown btn {
       cursor: pointer;
     }
-    #mobile-dropdown btn:hover{
-      color: blue;
-    }
     
     #mobile-dropdown_content {
       display: none;

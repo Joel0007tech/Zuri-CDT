@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="/flag-icon.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
 <body>
     <div class="desktop-view">
@@ -30,26 +30,25 @@
             <div style="display: flex;">
                 <li><a href="">Postcode lists</a></li>
                 <div class="dropdown">
-                    <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggleDropdown()">
+                    <span class="material-symbols-outlined" id="dropdown-btn" onmouseover="toggleDropdown()">
                         arrow_drop_down
                         </span>
                     <div id="dropdown-content">
-                      <a href="#">Option 1</a>
-                      <a href="#">Option 2</a>
-                      <a href="#">Option 3</a>
+                      <a href="#">By County</a>
+                      <a href="#">By Introduction date</a>
                     </div>
                   </div>
             </div>
             <div style="display: flex;">
                 <li><a href="">Postcode maps</a></li>
-                <div class="dropdown">
-                    <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggleDropdown()">
+                <div class="dropdown-second">
+                    <span class="material-symbols-outlined" id="dropdown-btn" onmouseover="toggleDrop()">
                         arrow_drop_down
                         </span>
-                    <div id="dropdown-content">
-                      <a href="#">Option 1</a>
-                      <a href="#">Option 2</a>
-                      <a href="#">Option 3</a>
+                    <div id="dropdown-content_second">
+                      <a href="#">User Type</a>
+                      <a href="#">Use category</a>
+                      <a href="#">Council Tax Band</a>
                     </div>
                   </div>
             </div>
@@ -59,14 +58,13 @@
     </div>
     <div style="display: flex; padding-top: 5px;">
         <li><a href="http://" target="_blank" rel="noopener noreferrer">Help and Information</a></li>
-        <div class="dropdown">
-            <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggleDropdown()">
+        <div class="dropdown-third">
+            <span class="material-symbols-outlined" id="dropdown-btn" onmouseover="toggleDown()">
                 arrow_drop_down
                 </span>
-            <div id="dropdown-content">
-              <a href="#">Option 1</a>
-              <a href="#">Option 2</a>
-              <a href="#">Option 3</a>
+            <div id="dropdown-content_third">
+              <a href="#">About this website</a>
+              <a href="#">Privacy Policy</a>
             </div>
           </div>
     </div>
@@ -74,7 +72,7 @@
        
     </ul>
    </nav>
-   <section style="padding-top:20px;">
+   <section style="padding-top:50px;">
     <h3 style="text-transform: capitalize; font-size:45px;
      font-weight: lighter; color:#222222; text-align: center;
        position: relative; right:270px;" >
@@ -101,7 +99,7 @@
          background-color: #008cba; border-style: none;
          color: white; font-family: Arial, Helvetica, sans-serif;
           width: 150px; position: relative; top: 28px; left: 20px;
-           height: fit-content; padding:18px; font-size: 15px;"/>
+           height: fit-content; padding:18px; font-size: 15px; margin-bottom: 15px;"/>
        </div>
     </div>
    </section>
@@ -171,7 +169,7 @@ border: 1px solid #ffe295; border-radius: 3px; position:relative; left: 75px; ga
         <a href=""><img src="zuri cdt img-3.webp" alt="" height="250px" width="200px" style="border-radius: 4px;"/></a>
      </div>
      <div style="display: flex; flex-direction: column; background-color:#edf1f6;
-      height: fit-content; position: relative; top:45px;">
+      height: fit-content; position: relative; top:45px; gap:10px;">
         <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
             <span class="flag-icon flag-icon-nor"></span>
             <a href="" style="text-decoration:none; color: #17498e; position: relative; right: 33px;"><p>Trondheim
@@ -591,7 +589,6 @@ border: 1px solid #ffe295; border-radius: 3px; position:relative; left: 75px; ga
 <p>CheckMyStudentId.UK is a <a href="" style="color: #008cba; text-decoration: none;">Good Stuff</a> website.</p>
 </footer>
    </div>
-
 <div class="mobile-view">
 <header style=" background: linear-gradient(#bfd255 0%,#8eb92a 45%,#72aa00 100%);">
     <nav>
@@ -606,16 +603,9 @@ border: 1px solid #ffe295; border-radius: 3px; position:relative; left: 75px; ga
                             menu
                             </span>
                              <div id="mobile-dropdown_content">
-                          <ul>
-                            <li>
-                                hello 
-                            </li>
-                            <li>
-                                hello 
-                            </li>
-                            <li>
-                                hello 
-                            </li>
+                          <a href="http://" target="_blank">Hello</a>
+                          <a href="http://" target="_blank">Hello</a>
+                          <a href="http://" target="_blank">Hello</a>
                         </div>
                       </div>
             </div>
@@ -1125,49 +1115,50 @@ border: 1px solid #ffe295; border-radius: 3px; position:relative; left: 75px; ga
                 </a>
                 </div>
             </div>
-           </div> 
-    </section>
-    <section style="background-color:rgb(216, 216, 216); padding:25px; border: 2px solid white;
-    display: flex; flex-direction: column; width:370px; margin: auto; gap: 20px;">
-    <p style="text-align: center; color: black; font-weight: bold;">Use Check My Student Id to find out all the key<br/>
-         information for your local postcode.</p>
-<p style="text-align: center;">Find out typical <span style="font-weight: bold;">house prices, council tax bands<br/>
-     and business rateable values.</span></p>
-<p style="text-align: center;">See who represents you in <span style="font-weight: bold;">parliament and your<br/>
-     local councils,</span> and discover how Ofsted has rated local
-     <span style="font-weight: bold;">schools</span></p>
-<p style="text-align: center;">Check whether <span style="font-weight: bold;">superfast broadband</span> is available,<br/>
-     and see how popular it is.</p>
-<p style="text-align: center;">See where your postcode is on a <span style="font-weight: bold;">map.</span><p>
-<p style="text-align: center;">Find the <span style="font-weight: bold;">nearest postcodes</span> to where you are<br/>
-     right now.</p>
-<p style="text-align: center; font-weight: bold;">Read what other people have said about your<br/>
-     postcode, and leave your own comments for<br/> others to read.</p>
-   </section>
-   <section style="background-color: #222222; display: flex; gap: 50px;
-    padding: 10px; justify-content: center; margin-top:20px; padding-top: 30px; padding-bottom: 30px; flex-direction: column;">
-<div style="display: flex; flex-direction: column;">
-<a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif;" class="footer_links">Search</a>
-<a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes by County</a>
-<a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes Near Me</a>
-<a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif ;" class="footer_links">Postcodes by Introduction Date</a>
-<a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Lottery</a>
-</div>
-<div style="display: flex; flex-direction: column;">
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by User Type</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by Use Category</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Postcode Map by Council Tax Band</a>
-</div>
-<div style="display: flex; flex-direction: column;">
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">About this Website</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Disclaimer and Limitations</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Privacy Policy</a>
-</div>
-   </section>
-   <footer style="display: flex; flex-direction: column; align-items: center; margin-top:20px; gap: 15px; margin-bottom: 20px;">
-    <h3>Check My Student Id</h3>
-    <p>CheckMyStudentId.UK is a <a href="" style="color: #008cba; text-decoration: none;">Good Stuff</a> website.</p>
-    </footer>
+        </section>
+        <section style="background-color:rgb(216, 216, 216); padding:25px; border: 2px solid white;
+        display: flex; flex-direction: column; width:370px; margin: auto; gap: 20px;" id="f-mobile">
+        <p style="text-align: center; color: black; font-weight: bold;">Use Check My Student Id to find out all the key<br/>
+             information for your local postcode.</p>
+    <p style="text-align: center;">Find out typical <span style="font-weight: bold;">house prices, council tax bands<br/>
+         and business rateable values.</span></p>
+    <p style="text-align: center;">See who represents you in <span style="font-weight: bold;">parliament and your<br/>
+         local councils,</span> and discover how Ofsted has rated local
+         <span style="font-weight: bold;">schools</span></p>
+    <p style="text-align: center;">Check whether <span style="font-weight: bold;">superfast broadband</span> is available,<br/>
+         and see how popular it is.</p>
+    <p style="text-align: center;">See where your postcode is on a <span style="font-weight: bold;">map.</span><p>
+    <p style="text-align: center;">Find the <span style="font-weight: bold;">nearest postcodes</span> to where you are<br/>
+         right now.</p>
+    <p style="text-align: center; font-weight: bold;">Read what other people have said about your<br/>
+         postcode, and leave your own comments for<br/> others to read.</p>
+       </section>
+       <section style="background-color: #222222; display: flex; gap: 50px;
+        padding: 10px; justify-content: center; margin-top:20px; padding-top: 30px; padding-bottom: 30px; flex-direction: column;" id="ff-mobile">
+    <div style="display: flex; flex-direction: column;">
+    <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif;" class="footer_links">Search</a>
+    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes by County</a>
+    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes Near Me</a>
+    <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif ;" class="footer_links">Postcodes by Introduction Date</a>
+    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Lottery</a>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by User Type</a>
+        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by Use Category</a>
+        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Postcode Map by Council Tax Band</a>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">About this Website</a>
+        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Disclaimer and Limitations</a>
+        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Privacy Policy</a>
+    </div>
+       </section>
+       <footer style="display: flex; flex-direction: column; align-items: center; margin-top:20px; gap: 15px; margin-bottom: 20px;" id="fff-mobile">
+        <h3>Check My Student Id</h3>
+        <p>CheckMyStudentId.UK is a <a href="" style="color: #008cba; text-decoration: none;">Good Stuff</a> website.</p>
+        </footer>   
+        </div> 
+    
 </div>
 </body>
 <script src="./index.js"></script>

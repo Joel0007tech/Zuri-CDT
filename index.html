@@ -1,1165 +1,1507 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check My Student ID</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="/flag-icon.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
     <div class="desktop-view">
-   <nav>
-    <ul>
-<div class="nav-link">
-    <div class="sub-nav__link">
-        <span class="material-symbols-outlined">
-            home
-            </span>
-        <div>
-            <form action="">
-                <input type="text" name="" id="" placeholder="postcode or placename"
-                 style="padding: 6px; font-family: Arial, Helvetica, sans-serif;">
-                <input type="submit" value="Search" class="search">
-            </form>
-        </div>
-        <div class="sub-nav-link__first">
-            <div style="display: flex;">
-                <li><a href="">Postcode lists</a></li>
-                <div class="dropdown">
-                    <span class="material-symbols-outlined" id="dropdown-btn" onmouseover="toggleDropdown()">
-                        arrow_drop_down
+        <nav>
+            <ul>
+                <div class="nav-link">
+                    <div class="sub-nav__link">
+                        <span class="material-symbols-outlined">
+                            home
                         </span>
-                    <div id="dropdown-content">
-                      <a href="#">By County</a>
-                      <a href="#">By Introduction date</a>
+                        <div>
+                            <form action="">
+                                <input type="text" name="" id="" placeholder="postcode or placename"
+                                    style="padding: 6px; font-family: Arial, Helvetica, sans-serif;">
+                                <input type="submit" value="Search" class="search">
+                            </form>
+                        </div>
+                        <div class="sub-nav-link__first">
+                            <div style="display: flex;">
+                                <li><a href="">Postcode lists</a></li>
+                                <div class="dropdown">
+                                    <span class="material-symbols-outlined" id="dropdown-btn"
+                                        onmouseover="toggleDropdown()">
+                                        arrow_drop_down
+                                    </span>
+                                    <div id="dropdown-content">
+                                        <a href="#">By County</a>
+                                        <a href="#">By Introduction date</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex;">
+                                <li><a href="">Postcode maps</a></li>
+                                <div class="dropdown-second">
+                                    <span class="material-symbols-outlined" id="dropdown-btn"
+                                        onmouseover="toggleDrop()">
+                                        arrow_drop_down
+                                    </span>
+                                    <div id="dropdown-content_second">
+                                        <a href="#">User Type</a>
+                                        <a href="#">Use category</a>
+                                        <a href="#">Council Tax Band</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="http://">Nearest postcodes</a></li>
+                            <li><a href="http://">Postcode lottery</a></li>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div style="display: flex;">
-                <li><a href="">Postcode maps</a></li>
-                <div class="dropdown-second">
-                    <span class="material-symbols-outlined" id="dropdown-btn" onmouseover="toggleDrop()">
-                        arrow_drop_down
-                        </span>
-                    <div id="dropdown-content_second">
-                      <a href="#">User Type</a>
-                      <a href="#">Use category</a>
-                      <a href="#">Council Tax Band</a>
+                    <div style="display: flex; padding-top: 5px;">
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Help and Information</a></li>
+                        <div class="dropdown-third">
+                            <span class="material-symbols-outlined" id="dropdown-btn" onmouseover="toggleDown()">
+                                arrow_drop_down
+                            </span>
+                            <div id="dropdown-content_third">
+                                <a href="#">About this website</a>
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-            </div>
-        <li><a href="http://">Nearest postcodes</a></li>
-        <li><a href="http://">Postcode lottery</a></li>
-        </div>
-    </div>
-    <div style="display: flex; padding-top: 5px;">
-        <li><a href="http://" target="_blank" rel="noopener noreferrer">Help and Information</a></li>
-        <div class="dropdown-third">
-            <span class="material-symbols-outlined" id="dropdown-btn" onmouseover="toggleDown()">
-                arrow_drop_down
-                </span>
-            <div id="dropdown-content_third">
-              <a href="#">About this website</a>
-              <a href="#">Privacy Policy</a>
-            </div>
-          </div>
-    </div>
-</div>
-       
-    </ul>
-   </nav>
-   <section style="padding-top:50px;">
-    <h3 style="text-transform: capitalize; font-size:45px;
+                </div>
+
+            </ul>
+        </nav>
+        <section style="padding-top:50px;">
+            <h3 style="text-transform: capitalize; font-size:45px;
      font-weight: lighter; color:#222222; text-align: center;
-       position: relative; right:270px;" >
-        Check my Student Id
-    </h3>
-    <div style="display: flex;justify-content: center; flex-direction: column;
+       position: relative; right:270px;">
+                Check my Student Id
+            </h3>
+            <div style="display: flex;justify-content: center; flex-direction: column;
      border: 3px solid orange; background-color: #FFCC99;
       position: relative; border-radius: 15px; width: fit-content; left:280px;
        padding: 45px; ">
-      <div style="display:flex; justify-content:center; gap: 7px;">
-        <form action="">
-            <input type="text" name="" id="" placeholder="postcode or placename"
-             style="padding: 3px; font-family: Arial, Helvetica, sans-serif; width: 800px;
-              height: 30px; margin-top:7px; border: none;"/>
-            <input type="submit" value="Search" style="padding: 20px; padding-top: 20px;
+                <div style="display:flex; justify-content:center; gap: 7px;">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="postcode or placename" style="padding: 3px; font-family: Arial, Helvetica, sans-serif; width: 800px;
+              height: 30px; margin-top:7px; border: none;" />
+                        <input type="submit" value="Search" style="padding: 20px; padding-top: 20px;
              padding-bottom: 20px; background-color: #008cba; border-style: none;
               color: white; font-family: Arial, Helvetica, sans-serif;
-               width: 120px; position: relative; left: 30px; top: 10px; font-size: 15px;"/>
-        </form></div>
-       <div style="display:flex;justify-content: center; position: relative; left: 50px;">
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size:20px; position: relative; top: 15px; color: #222222;;">
-            Or use your device's geolocation service to find postcodes near you</p>
-        <input type="submit" value="Locate Me!" style="
+               width: 120px; position: relative; left: 30px; top: 10px; font-size: 15px;" />
+                    </form>
+                </div>
+                <div style="display:flex;justify-content: center; position: relative; left: 50px;">
+                    <p
+                        style="font-family: Arial, Helvetica, sans-serif; font-size:20px; position: relative; top: 15px; color: #222222;;">
+                        Or use your device's geolocation service to find postcodes near you</p>
+                    <input type="submit" value="Locate Me!" style="
          background-color: #008cba; border-style: none;
          color: white; font-family: Arial, Helvetica, sans-serif;
           width: 150px; position: relative; top: 28px; left: 20px;
-           height: fit-content; padding:18px; font-size: 15px; margin-bottom: 15px;"/>
-       </div>
-    </div>
-   </section>
-   <section style="padding-top: 20px; display: flex; flex-direction:column; align-items: center;">
-    <div style="display: flex;">
-  <p style="font-family: Arial, Helvetica, sans-serif; color:blue; font-weight: bold; font-size: 20px; padding-top: 15px;">
-    Booking<span style="color: #008cba; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">.com</span></p>
-    <div style="background-color:#ffca56; border: 1px solid #FFCC99; display: flex; padding: 3px; border-radius: 4px; gap: 70px; width: 650px;">
-<form>
-    <input type="text" placeholder="e.g. city, region, district or specific hotel, home, apartment....." style="padding: 10px;"/>
-    <input type="date" name="" id="" style="padding:10px; font-family: Arial, Helvetica, sans-serif;"/>
-    <input type="submit" value="Search" style="background-color: #008cba; 
-    color: white; padding: 10px; border: 2px solid white; font-family: Arial, Helvetica, sans-serif; cursor: pointer;"/>
-</form>
-<div style="display: flex;
+           height: fit-content; padding:18px; font-size: 15px; margin-bottom: 15px;" />
+                </div>
+            </div>
+        </section>
+        <section style="padding-top: 20px; display: flex; flex-direction:column; align-items: center;">
+            <div style="display: flex;">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif; color:blue; font-weight: bold; font-size: 20px; padding-top: 15px;">
+                    Booking<span
+                        style="color: #008cba; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">.com</span>
+                </p>
+                <div
+                    style="background-color:#ffca56; border: 1px solid #FFCC99; display: flex; padding: 3px; border-radius: 4px; gap: 70px; width: 650px;">
+                    <form>
+                        <input type="text"
+                            placeholder="e.g. city, region, district or specific hotel, home, apartment....."
+                            style="padding: 10px;" />
+                        <input type="date" name="" id=""
+                            style="padding:10px; font-family: Arial, Helvetica, sans-serif;" />
+                        <input type="submit" value="Search"
+                            style="background-color: #008cba; 
+    color: white; padding: 10px; border: 2px solid white; font-family: Arial, Helvetica, sans-serif; cursor: pointer;" />
+                    </form>
+                    <div style="display: flex;
 background-color:#daa300; color:#765907; height:35px; margin-top: 3px;
  padding-top:3px; padding-right: 10px; padding-left: 10px;
 border: 1px solid #ffe295; border-radius: 3px; position:relative; left: 75px; gap: 4px;">
-    <span class="material-symbols-outlined">
-        groups
-        </span>
-        <a href="" style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; position: relative; top:7px;">Guests</a>
-</div>
-    
-    </div>
-    </div>
-    <div style="display: flex; gap: 5px; position: relative; bottom:43px;">
-     <div>
-        <a href="">
-            <div style="display: flex; flex-direction:column; position: relative;
-             top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
-             <div style="display: flex; gap: 2px;">
-                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Trondheim 
-                </p>
-                <span class="flag-icon flag-icon-nor"></span>
-             </div>
-                <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
-                 </div>
-        </a>
-        <a href=""><img src="./zuri cdt-img 1.webp" alt="" height="250px" width="200px" style="border-radius: 4px;"/></a>
-     </div>
-     <div>
-        <a href="">
-            <div style="display: flex; flex-direction:column; position: relative;
-             top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
-             <div style="display: flex; gap: 2px;">
-                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Sixt
-                </p>
-                <span class="flag-icon flag-icon-fra"></span>
+                        <span class="material-symbols-outlined">
+                            groups
+                        </span>
+                        <a href=""
+                            style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; position: relative; top:7px;">Guests</a>
+                    </div>
+
                 </div>
-                <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
-                 </div>
-        </a>
-        <a href=""><img src="zuri cdt img-2.webp" alt="" height="250px" width="200px" style="border-radius: 4px;"/></a>
-     </div>
-     <div>
-        <a href="">
-            <div style="display: flex; flex-direction:column; position: relative;
-             top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
-                <div style="display: flex; gap: 2px;"><p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Bransgore 
-                </p>
-                <span class="flag-icon flag-icon-eng"></span>
             </div>
-                <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
-                 </div>
-        </a>
-        <a href=""><img src="zuri cdt img-3.webp" alt="" height="250px" width="200px" style="border-radius: 4px;"/></a>
-     </div>
-     <div style="display: flex; flex-direction: column; background-color:#edf1f6;
+            <div style="display: flex; gap: 5px; position: relative; bottom:43px;">
+                <div>
+                    <a href="">
+                        <div style="display: flex; flex-direction:column; position: relative;
+             top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
+                            <div style="display: flex; gap: 2px;">
+                                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                    Trondheim
+                                </p>
+                                <span class="flag-icon flag-icon-nor"></span>
+                            </div>
+                            <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
+                        </div>
+                    </a>
+                    <a href=""><img src="./zuri cdt-img 1.webp" alt="" height="250px" width="200px"
+                            style="border-radius: 4px;" /></a>
+                </div>
+                <div>
+                    <a href="">
+                        <div style="display: flex; flex-direction:column; position: relative;
+             top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
+                            <div style="display: flex; gap: 2px;">
+                                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                    Sixt
+                                </p>
+                                <span class="flag-icon flag-icon-fra"></span>
+                            </div>
+                            <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
+                        </div>
+                    </a>
+                    <a href=""><img src="zuri cdt img-2.webp" alt="" height="250px" width="200px"
+                            style="border-radius: 4px;" /></a>
+                </div>
+                <div>
+                    <a href="">
+                        <div style="display: flex; flex-direction:column; position: relative;
+             top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
+                            <div style="display: flex; gap: 2px;">
+                                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                    Bransgore
+                                </p>
+                                <span class="flag-icon flag-icon-eng"></span>
+                            </div>
+                            <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
+                        </div>
+                    </a>
+                    <a href=""><img src="zuri cdt img-3.webp" alt="" height="250px" width="200px"
+                            style="border-radius: 4px;" /></a>
+                </div>
+                <div style="display: flex; flex-direction: column; background-color:#edf1f6;
       height: fit-content; position: relative; top:45px; gap:10px;">
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-nor"></span>
-            <a href="" style="text-decoration:none; color: #17498e; position: relative; right: 33px;"><p>Trondheim
-            </p></a>
-            <a href="" style="text-decoration:none; color: gray;"><p>from</p></a>
-        </div>
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-fra"></span>
-            <a href="" style="text-decoration:none; color: #17498e; position: relative; right:56px;"><p>Sixt</p></a>
-            <a href="" style="text-decoration:none; color: gray;"><p>from</p></a>
-        </div>
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-eng"></span>
-            <a href="" style="text-decoration: none; color: #17498e; position:relative; right: 33px;"><p>Bransgora
-            </p></a>
-            <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-        </div>
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-esp"></span>
-            <a href="" style="text-decoration: none; color: #17498e; position: relative; right:25px;"><p>Cala Anguila
-            </p></a>
-            <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-        </div>
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-ita"></span>
-            <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 30px;"><p>Chiusanico
-            </p></a>
-            <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-        </div>
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-grc"></span>
-            <a href="" style="text-decoration: none; color: #17498e; position: relative; right:30px;"><p>Kavousion
-            </p></a>
-            <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-        </div>
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-com"></span>
-            <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 15px;"><p>Pieve Di Ledro
-            </p></a>
-            <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-        </div>
-        <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-            <span class="flag-icon flag-icon-fra"></span>
-            <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 10px;"><p>Vierville-sur-Mer
-            </p></a>
-            <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-        </div>
-        <a href="" style="text-decoration: none; color: white; background-color:#008cba;
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-nor"></span>
+                        <a href="" style="text-decoration:none; color: #17498e; position: relative; right: 33px;">
+                            <p>Trondheim
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration:none; color: gray;">
+                            <p>from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-fra"></span>
+                        <a href="" style="text-decoration:none; color: #17498e; position: relative; right:56px;">
+                            <p>Sixt</p>
+                        </a>
+                        <a href="" style="text-decoration:none; color: gray;">
+                            <p>from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-eng"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position:relative; right: 33px;">
+                            <p>Bransgora
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-esp"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right:25px;">
+                            <p>Cala Anguila
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-ita"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 30px;">
+                            <p>Chiusanico
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-grc"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right:30px;">
+                            <p>Kavousion
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-com"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 15px;">
+                            <p>Pieve Di Ledro
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-fra"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 10px;">
+                            <p>Vierville-sur-Mer
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <a href="" style="text-decoration: none; color: white; background-color:#008cba;
          width:200px; border: 1px solid white; margin: auto; text-align: center;">🔍Discover</a>
-    </div>
-    </div>
-   </section>
-   <section style="position: relative; padding-top: 20px;">
-    <h5 style="text-transform: capitalize; font-size:45px;
+                </div>
+            </div>
+        </section>
+        <section style="position: relative; padding-top: 20px;">
+            <h5 style="text-transform: capitalize; font-size:45px;
     font-weight: lighter; color:#222222; text-align: center;
       position: relative; right:290px;
        font-family: Arial, Helvetica, sans-serif;">Popular Student Ids</h5>
-       <div style="display: flex; flex-direction: column;  gap:1px; position: relative;left: 270px;">
-        <div style="display: flex; gap:7px;">
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-            SA99 1DU
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-            W1A 1AA 
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-            SW1A 1AA
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-            WC2N 5DU
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-            LE87 2BB
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-            SL6 3QQ
-        </a>
-       </div>
-        <div style="display: flex; gap: 10px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                BD1 1AH
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                WC2H 9JQ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                EC1V 2NX
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                PO16 7GZ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
-                B61 7HA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
-                BA3 4YF
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
-                KY11 8ST
-            </a>
-        </div>
-        <div style="display: flex; gap: 7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                DY13 0NW
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                L20 7YW
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                WS13 8UR
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SR43 2SB
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA99 1BT
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                UB7 0LB
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SW1A 2AA 
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                PR3 1XB
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BT2 8HQ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                G51 1DA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                B15 2TE
-            </a>
-        </div>
-        <div style="display: flex; gap: 7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                EH3 1GE
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SW1W 0NY
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                M9 5SD
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                M19 3AD
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                PR25 9FR
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA99 1YW
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                AL10 9WN
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SW1A 0AA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                CV3 9SD
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                IG11 7RN
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                W1A 6US
-            </a>
-        </div>
-        <div style="display: flex; gap: 7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SR5 9QY
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                N1 7GU 
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                NN18 8UA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA99 1DU
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                NE12 8NW
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                DL98 1AT
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BT1 9WY
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                DA15 0BQ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                EC1A 1AA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                M5 4WT
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SO14 0AG
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                PE32 1TE
-            </a>
-        </div>
-        <div style="display: flex; gap: 7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                HD8 1DY
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                WV98 2AD
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                DL1 9AG
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                CV4 7ES
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                CV21 9FU
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BT1 9PT
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                N15 6RS
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BS9 0DP
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                M1 1AG
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BN21 9AT
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                E1 6AN
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                E1 6JJ
-            </a>
-        </div>
-        <div style="display: flex; gap: 7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BR1 3BX
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                WV14 4BZ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                PR3 1NJ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                CV4 7AL
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SY5 8NF
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BH16 6FA
-                </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                WA7 9DY
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                NE38 9EX 
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                M4 6GA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                FY8 5DX 
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                NG20 8RY
-            </a>
-        </div>
-        <div style="display: flex; gap: 7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 13px;">
-                DE1 0NQ
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            BN1 6WH
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            SK14 4TU
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            WC1X 0HD
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            SN38 1NW 
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            E17 9RD
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            WA5 9QG
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            NP11 4RB
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            IV11 8YS
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            CV34 4LL
-        </a>
-        <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-            SA6 7JL
-        </a>
-    </div>
-        <div style="display: flex; gap: 7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                EH54 0HH
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA99 1AB
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                ST4 5BW
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BN3 8EZ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                EX2 7JH
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA99 1ZW
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BN99 6RB
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                EC1A 1BB
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                M14 4TY
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                LE87 2GA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                CF10 4GA
-            </a>
-        </div>
-        <div style="display: flex;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                LE4 6JL
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                S60 1AA
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BH16 6FH
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                NE98 1ZZ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                M21 9NP
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                DE12 6RE
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                NW8 0EG 
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA99 1BN
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA99 1AF
-            </a>
-        </div>
-       </div>
-   </section>
-   <section style="background-color:rgb(216, 216, 216); padding:25px; border: 2px solid white;
-    display: flex; flex-direction: column; width:1000px; margin: auto; gap: 20px;">
-    <p style="text-align: center; color: black; font-weight: bold;">Use Check My Student Id to find out all the key information for your local postcode.</p>
-<p style="text-align: center;">Find out typical <span style="font-weight: bold;">house prices, council tax bands and business rateable values.</span></p>
-<p style="text-align: center;">See who represents you in <span style="font-weight: bold;">parliament and your local councils,</span> and discover how Ofsted has rated local
-     <span style="font-weight: bold;">schools</span></p>
-<p style="text-align: center;">Check whether <span style="font-weight: bold;">superfast broadband</span> is available, and see how popular it is.</p>
-<p style="text-align: center;">See where your postcode is on a <span style="font-weight: bold;">map.</span><p>
-<p style="text-align: center;">Find the <span style="font-weight: bold;">nearest postcodes</span> to where you are right now.</p>
-<p style="text-align: center; font-weight: bold;">Read what other people have said about your postcode, and leave your own comments for others to read.</p>
-   </section>
-   <section style="background-color: #222222; display: flex; gap: 50px;
-    padding: 10px; justify-content: center; margin-top:20px; padding-top: 30px; padding-bottom: 30px;">
-<div style="display: flex; flex-direction: column;">
-<a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif;" class="footer_links">Search</a>
-<a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes by County</a>
-<a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes Near Me</a>
-<a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif ;" class="footer_links">Postcodes by Introduction Date</a>
-<a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Lottery</a>
-</div>
-<div style="display: flex; flex-direction: column;">
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by User Type</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by Use Category</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Postcode Map by Council Tax Band</a>
-</div>
-<div style="display: flex; flex-direction: column;">
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">About this Website</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Disclaimer and Limitations</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Privacy Policy</a>
-</div>
-   </section>
-   <footer style="display: flex; flex-direction: column; align-items: center; margin-top:20px; gap: 15px; margin-bottom: 20px;">
-<h3>Check My Student Id</h3>
-<p>CheckMyStudentId.UK is a <a href="" style="color: #008cba; text-decoration: none;">Good Stuff</a> website.</p>
-</footer>
-   </div>
-<div class="mobile-view">
-<header style=" background: linear-gradient(#bfd255 0%,#8eb92a 45%,#72aa00 100%);">
-    <nav>
-        <div style="display: flex; justify-content: space-between;">
-            <span class="material-symbols-outlined">
-                home
-            </span>
-            <div style="display: flex;">
-                    <p style="color: white; position: relative; top:6px; font-family: Arial, Helvetica, sans-serif;">Menu</p>
-                    <div class="mobile-dropdown">
-                        <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggle()">
-                            menu
-                            </span>
-                             <div id="mobile-dropdown_content">
-                          <a href="http://" target="_blank">Hello</a>
-                          <a href="http://" target="_blank">Hello</a>
-                          <a href="http://" target="_blank">Hello</a>
-                        </div>
-                      </div>
+            <div style="display: flex; flex-direction: column;  gap:1px; position: relative;left: 270px;">
+                <div style="display: flex; gap:7px;">
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        SA99 1DU
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        W1A 1AA
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        SW1A 1AA
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        WC2N 5DU
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        LE87 2BB
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        SL6 3QQ
+                    </a>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        BD1 1AH
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        WC2H 9JQ
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        EC1V 2NX
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        PO16 7GZ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
+                        B61 7HA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
+                        BA3 4YF
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
+                        KY11 8ST
+                    </a>
+                </div>
+                <div style="display: flex; gap: 7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DY13 0NW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        L20 7YW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WS13 8UR
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SR43 2SB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1BT
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        UB7 0LB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SW1A 2AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PR3 1XB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BT2 8HQ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        G51 1DA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        B15 2TE
+                    </a>
+                </div>
+                <div style="display: flex; gap: 7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EH3 1GE
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SW1W 0NY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M9 5SD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M19 3AD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PR25 9FR
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1YW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        AL10 9WN
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SW1A 0AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV3 9SD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        IG11 7RN
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        W1A 6US
+                    </a>
+                </div>
+                <div style="display: flex; gap: 7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SR5 9QY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        N1 7GU
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NN18 8UA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1DU
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NE12 8NW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DL98 1AT
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BT1 9WY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DA15 0BQ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EC1A 1AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M5 4WT
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SO14 0AG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PE32 1TE
+                    </a>
+                </div>
+                <div style="display: flex; gap: 7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        HD8 1DY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WV98 2AD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DL1 9AG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV4 7ES
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV21 9FU
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BT1 9PT
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        N15 6RS
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BS9 0DP
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M1 1AG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN21 9AT
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        E1 6AN
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        E1 6JJ
+                    </a>
+                </div>
+                <div style="display: flex; gap: 7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BR1 3BX
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WV14 4BZ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PR3 1NJ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV4 7AL
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SY5 8NF
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BH16 6FA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WA7 9DY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NE38 9EX
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M4 6GA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        FY8 5DX
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NG20 8RY
+                    </a>
+                </div>
+                <div style="display: flex; gap: 7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 13px;">
+                        DE1 0NQ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN1 6WH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SK14 4TU
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WC1X 0HD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SN38 1NW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        E17 9RD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WA5 9QG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NP11 4RB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        IV11 8YS
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV34 4LL
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA6 7JL
+                    </a>
+                </div>
+                <div style="display: flex; gap: 7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EH54 0HH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1AB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        ST4 5BW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN3 8EZ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EX2 7JH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1ZW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN99 6RB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EC1A 1BB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M14 4TY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        LE87 2GA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CF10 4GA
+                    </a>
+                </div>
+                <div style="display: flex;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        LE4 6JL
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        S60 1AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BH16 6FH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NE98 1ZZ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M21 9NP
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DE12 6RE
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NW8 0EG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1BN
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1AF
+                    </a>
+                </div>
             </div>
-                
-        </div>
-    </nav>
-</header>
-<section style="padding: 5px;">
-    <h3 style="font-size: 40px; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">
-        Check my StudentId
-    </h3>
-    <div style="display: flex; flex-direction: column; gap:20px; border: 2px solid orange; padding:10px;
-     background-color:#FFCC99; border-radius:7px;">
-        <input type="text" name="" id="" style="width: 300px; height: 30px;">
-        <a href="http://" style="background-color: #008cba; color: white; width: fit-content;text-decoration: none; padding:17px;
-         font-family: Arial, Helvetica, sans-serif;">Search</a>
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size:18px; text-align: right;">Or use your device's geolocation service<br/>
-        to find student id near you</p>
-        <a href="http://" style="background-color: #008cba; color: white; width: fit-content; text-decoration: none; padding:20px;
-         font-family: Arial, Helvetica, sans-serif; margin-bottom:30px;">Locate Me!</a>
+        </section>
+        <section style="background-color:rgb(216, 216, 216); padding:25px; border: 2px solid white;
+    display: flex; flex-direction: column; width:1000px; margin: auto; gap: 20px;">
+            <p style="text-align: center; color: black; font-weight: bold;">Use Check My Student Id to find out all the
+                key information for your local postcode.</p>
+            <p style="text-align: center;">Find out typical <span style="font-weight: bold;">house prices, council tax
+                    bands and business rateable values.</span></p>
+            <p style="text-align: center;">See who represents you in <span style="font-weight: bold;">parliament and
+                    your local councils,</span> and discover how Ofsted has rated local
+                <span style="font-weight: bold;">schools</span>
+            </p>
+            <p style="text-align: center;">Check whether <span style="font-weight: bold;">superfast broadband</span> is
+                available, and see how popular it is.</p>
+            <p style="text-align: center;">See where your postcode is on a <span style="font-weight: bold;">map.</span>
+            <p>
+            <p style="text-align: center;">Find the <span style="font-weight: bold;">nearest postcodes</span> to where
+                you are right now.</p>
+            <p style="text-align: center; font-weight: bold;">Read what other people have said about your postcode, and
+                leave your own comments for others to read.</p>
+        </section>
+        <section style="background-color: #222222; display: flex; gap: 50px;
+    padding: 10px; justify-content: center; margin-top:20px; padding-top: 30px; padding-bottom: 30px;">
+            <div style="display: flex; flex-direction: column;">
+                <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif;"
+                    class="footer_links">Search</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcodes by County</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcodes Near Me</a>
+                <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif ;"
+                    class="footer_links">Postcodes by Introduction Date</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcode Lottery</a>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcode Map by User Type</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcode Map by Use Category</a>
+                <a href=""
+                    style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Postcode Map
+                    by Council Tax Band</a>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">About this Website</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Disclaimer and Limitations</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Privacy Policy</a>
+            </div>
+        </section>
+        <footer
+            style="display: flex; flex-direction: column; align-items: center; margin-top:20px; gap: 15px; margin-bottom: 20px;">
+            <h3>Check My Student Id</h3>
+            <p>CheckMyStudentId.UK is a <a href="" style="color: #008cba; text-decoration: none;">Good Stuff</a>
+                website.</p>
+        </footer>
     </div>
-    </section>
-    <section style="padding-top: 20px; display: flex; flex-direction:column; align-items: center;">
-        <div style="display: flex; flex-direction: column;">
-      <p style="font-family: Arial, Helvetica, sans-serif; color:blue; font-weight: bold; font-size: 20px; padding-top: 15px;">
-        Booking<span style="color: #008cba; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">.com</span></p>
-        <div style="background-color:#ffca56; border: 1px solid #FFCC99; display: flex;
+    <div class="mobile-view">
+        <header style=" background: linear-gradient(#bfd255 0%,#8eb92a 45%,#72aa00 100%);">
+            <nav>
+                <div style="display: flex; justify-content: space-between;">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <div style="display: flex;">
+                        <p
+                            style="color: white; position: relative; top:6px; font-family: Arial, Helvetica, sans-serif;">
+                            Menu</p>
+                        <div class="mobile-dropdown">
+                            <span class="material-symbols-outlined" id="dropdown-btn" onclick="toggle()">
+                                menu
+                            </span>
+                        </div>   
+                    </div>
+                </div>
+                <div id="mobile-dropdown_content">
+                    <a href="http://" target="_blank">Help and Information</a>
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="postcode or placename"
+                            style="padding: 6px; font-family: Arial, Helvetica, sans-serif; position: relative; left:10px; width: 250px;">
+                        <input type="submit" value="Search" class="search">
+                    </form>
+                    <a href="http://" target="_blank">Postcode Lists</a>
+                    <a href="http://" target="_blank">Postcode Maps</a>
+                    <a href="http://" target="_blank">Nearest Postcodes</a>
+                    <a href="http://" target="_blank">Postcode Lottery</a>
+                </div>
+            </nav>
+        </header>
+        <section style="padding: 5px;">
+            <h3 style="font-size: 40px; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">
+                Check my StudentId
+            </h3>
+            <div style="display: flex; flex-direction: column; gap:20px; border: 2px solid orange; padding:10px;
+     background-color:#FFCC99; border-radius:7px;">
+                <input type="text" name="" id="" style="width: 300px; height: 30px;">
+                <a href="http://" style="background-color: #008cba; color: white; width: fit-content;text-decoration: none; padding:17px;
+         font-family: Arial, Helvetica, sans-serif;">Search</a>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size:18px; text-align: right;">Or use your
+                    device's geolocation service<br />
+                    to find student id near you</p>
+                <a href="http://" style="background-color: #008cba; color: white; width: fit-content; text-decoration: none; padding:20px;
+         font-family: Arial, Helvetica, sans-serif; margin-bottom:30px;">Locate Me!</a>
+            </div>
+        </section>
+        <section style="padding-top: 20px; display: flex; flex-direction:column; align-items: center;">
+            <div style="display: flex; flex-direction: column;">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif; color:blue; font-weight: bold; font-size: 20px; padding-top: 15px;">
+                    Booking<span
+                        style="color: #008cba; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">.com</span>
+                </p>
+                <div style="background-color:#ffca56; border: 1px solid #FFCC99; display: flex;
          flex-direction:column; padding: 3px; border-radius: 4px; gap: 70px; width: 350px;">
-    <form style="display: flex; flex-direction: column; gap:20px; padding-top:30px;">
-        <input type="text" placeholder="e.g. city, region, district or specific hotel, home, apartment....." style="padding: 10px;"/>
-        <input type="date" name="" id="" style="padding:10px; font-family: Arial, Helvetica, sans-serif; width: fit-content; margin: auto;"/>
-        <input type="submit" value="Search" style="background-color: #008cba; width:150px; margin:auto; margin-top: 10px;
-        color: white; padding: 15px; border: 2px solid white; font-family: Arial, Helvetica, sans-serif; cursor: pointer;"/>
-    </form>
-    <div style="display: flex;
+                    <form style="display: flex; flex-direction: column; gap:20px; padding-top:30px;">
+                        <input type="text"
+                            placeholder="e.g. city, region, district or specific hotel, home, apartment....."
+                            style="padding: 10px;" />
+                        <input type="date" name="" id=""
+                            style="padding:10px; font-family: Arial, Helvetica, sans-serif; width: fit-content; margin: auto;" />
+                        <input type="submit" value="Search"
+                            style="background-color: #008cba; width:150px; margin:auto; margin-top: 10px;
+        color: white; padding: 15px; border: 2px solid white; font-family: Arial, Helvetica, sans-serif; cursor: pointer;" />
+                    </form>
+                    <div style="display: flex;
     background-color:#daa300; color:#765907; height:35px; margin-top: 3px;
      padding-top:3px; padding-right: 10px; padding-left: 10px; width: fit-content;
     border: 1px solid #ffe295; border-radius: 3px; gap: 4px; margin: auto; position: relative; bottom: 15px;">
-        <span class="material-symbols-outlined">
-            groups
-            </span>
-            <a href="" style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; position: relative; top:7px;">Guests</a>
-    </div>
-        
-        </div>
-        </div>
-        <div style="display: flex; flex-direction: column;">
-         <div>
-            <a href="">
-                <div style="display: flex; flex-direction:column; position: relative;
-                 top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
-                 <div style="display: flex; gap: 2px;">
-                    <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Trondheim 
-                    </p>
-                    <span class="flag-icon flag-icon-nor"></span>
-                 </div>
-                    <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
-                     </div>
-            </a>
-            <a href=""><img src="./zuri cdt-img 1.webp" alt="" height="250px" width="200px" style="border-radius: 4px;"/></a>
-         </div>
-         <div>
-            <a href="">
-                <div style="display: flex; flex-direction:column; position: relative;
-                 top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
-                 <div style="display: flex; gap: 2px;">
-                    <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Sixt
-                    </p>
-                    <span class="flag-icon flag-icon-fra"></span>
+                        <span class="material-symbols-outlined">
+                            groups
+                        </span>
+                        <a href=""
+                            style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; position: relative; top:7px;">Guests</a>
                     </div>
-                    <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
-                     </div>
-            </a>
-            <a href=""><img src="zuri cdt img-2.webp" alt="" height="250px" width="200px" style="border-radius: 4px;"/></a>
-         </div>
-         <div>
-            <a href="">
-                <div style="display: flex; flex-direction:column; position: relative;
+
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <div>
+                    <a href="">
+                        <div style="display: flex; flex-direction:column; position: relative;
                  top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
-                    <div style="display: flex; gap: 2px;"><p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Bransgore 
-                    </p>
-                    <span class="flag-icon flag-icon-eng"></span>
-                </div>
-                    <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
-                     </div>
-            </a>
-            <a href=""><img src="zuri cdt img-3.webp" alt="" height="250px" width="200px" style="border-radius: 4px;"/></a>
-         </div>
-         <div style="display: flex; flex-direction: column; background-color:#edf1f6;
-          height: fit-content; position: relative; top:45px;">
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-nor"></span>
-                <a href="" style="text-decoration:none; color: #17498e; position: relative; right: 33px;"><p>Trondheim
-                </p></a>
-                <a href="" style="text-decoration:none; color: gray;"><p>from</p></a>
-            </div>
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-fra"></span>
-                <a href="" style="text-decoration:none; color: #17498e; position: relative; right:56px;"><p>Sixt</p></a>
-                <a href="" style="text-decoration:none; color: gray;"><p>from</p></a>
-            </div>
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-eng"></span>
-                <a href="" style="text-decoration: none; color: #17498e; position:relative; right: 33px;"><p>Bransgora
-                </p></a>
-                <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-            </div>
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-esp"></span>
-                <a href="" style="text-decoration: none; color: #17498e; position: relative; right:25px;"><p>Cala Anguila
-                </p></a>
-                <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-            </div>
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-ita"></span>
-                <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 30px;"><p>Chiusanico
-                </p></a>
-                <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-            </div>
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-grc"></span>
-                <a href="" style="text-decoration: none; color: #17498e; position: relative; right:30px;"><p>Kavousion
-                </p></a>
-                <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-            </div>
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-com"></span>
-                <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 15px;"><p>Pieve Di Ledro
-                </p></a>
-                <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-            </div>
-            <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
-                <span class="flag-icon flag-icon-fra"></span>
-                <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 10px;"><p>Vierville-sur-Mer
-                </p></a>
-                <a href="" style="text-decoration: none; color: gray;"><p style="text-align: right;">from</p></a>
-            </div>
-            <a href="" style="text-decoration: none; color: white; background-color:#008cba;
-             width:200px; border: 1px solid white; margin: auto; text-align: center;">🔍Discover</a>
-        </div>
-        </div>
-       </section>
-       <section style="display: flex; flex-direction: column; margin-top:50px; padding: 7px;">
-        <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: normal;">Popular StudentId</h3>
-        <div style="display: flex; flex-direction: column;  gap:1px;">
-            <div style="display: flex; gap:7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-                SA99 1DU
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-                W1A 1AA 
-            </a>
-            </div>
-            <div style="display: flex; gap:7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-                SW1A 1AA
-            </a>
-            </div>
-            <div style="display: flex; gap:7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-                WC2N 5DU
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-                LE87 2BB
-            </a>
-            </div>
-            <div style="display: flex; gap:7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
-                SL6 3QQ
-            </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                    BD1 1AH
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                    WC2H 9JQ
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                    EC1V 2NX
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
-                    PO16 7GZ
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
-                    B61 7HA
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
-                    BA3 4YF
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
-                    KY11 8ST
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    DY13 0NW
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    L20 7YW
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    WS13 8UR
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SR43 2SB
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SA99 1BT
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    UB7 0LB
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SW1A 2AA 
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    PR3 1XB
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BT2 8HQ
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    G51 1DA
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    B15 2TE
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    EH3 1GE
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SW1W 0NY
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    M9 5SD
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    M19 3AD
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    PR25 9FR
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SA99 1YW
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    AL10 9WN
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SW1A 0AA
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    CV3 9SD
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    IG11 7RN
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    W1A 6US
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SR5 9QY
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    N1 7GU 
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    NN18 8UA
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SA99 1DU
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    NE12 8NW
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    DL98 1AT
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BT1 9WY
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    DA15 0BQ
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    EC1A 1AA
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    M5 4WT
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SO14 0AG
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    PE32 1TE
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    HD8 1DY
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    WV98 2AD
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    DL1 9AG
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    CV4 7ES
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    CV21 9FU
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BT1 9PT
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    N15 6RS
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BS9 0DP
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    M1 1AG
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BN21 9AT
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    E1 6AN
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    E1 6JJ
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BR1 3BX
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    WV14 4BZ
-                </a>
-                </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    PR3 1NJ
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    CV4 7AL
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SY5 8NF
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BH16 6FA
+                            <div style="display: flex; gap: 2px;">
+                                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                    Trondheim
+                                </p>
+                                <span class="flag-icon flag-icon-nor"></span>
+                            </div>
+                            <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
+                        </div>
                     </a>
+                    <a href=""><img src="./zuri cdt-img 1.webp" alt="" height="250px" width="200px"
+                            style="border-radius: 4px;" /></a>
+                </div>
+                <div>
+                    <a href="">
+                        <div style="display: flex; flex-direction:column; position: relative;
+                 top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
+                            <div style="display: flex; gap: 2px;">
+                                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                    Sixt
+                                </p>
+                                <span class="flag-icon flag-icon-fra"></span>
+                            </div>
+                            <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
+                        </div>
+                    </a>
+                    <a href=""><img src="zuri cdt img-2.webp" alt="" height="250px" width="200px"
+                            style="border-radius: 4px;" /></a>
+                </div>
+                <div>
+                    <a href="">
+                        <div style="display: flex; flex-direction:column; position: relative;
+                 top: 50px; left: 10px; gap: 5px; background-color:rgb(0 0 0 / 60%); width: fit-content;">
+                            <div style="display: flex; gap: 2px;">
+                                <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                    Bransgore
+                                </p>
+                                <span class="flag-icon flag-icon-eng"></span>
+                            </div>
+                            <p style="color: white; font-family: Arial, Helvetica, sans-serif;">45 properties »</p>
+                        </div>
+                    </a>
+                    <a href=""><img src="zuri cdt img-3.webp" alt="" height="250px" width="200px"
+                            style="border-radius: 4px;" /></a>
+                </div>
+                <div style="display: flex; flex-direction: column; background-color:#edf1f6;
+          height: fit-content; position: relative; top:45px;">
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-nor"></span>
+                        <a href="" style="text-decoration:none; color: #17498e; position: relative; right: 33px;">
+                            <p>Trondheim
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration:none; color: gray;">
+                            <p>from</p>
+                        </a>
                     </div>
-                    <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    WA7 9DY
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    NE38 9EX 
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    M4 6GA
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    FY8 5DX 
-                </a>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-fra"></span>
+                        <a href="" style="text-decoration:none; color: #17498e; position: relative; right:56px;">
+                            <p>Sixt</p>
+                        </a>
+                        <a href="" style="text-decoration:none; color: gray;">
+                            <p>from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-eng"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position:relative; right: 33px;">
+                            <p>Bransgora
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-esp"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right:25px;">
+                            <p>Cala Anguila
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-ita"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 30px;">
+                            <p>Chiusanico
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-grc"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right:30px;">
+                            <p>Kavousion
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-com"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 15px;">
+                            <p>Pieve Di Ledro
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <div style="display: flex; gap: 20px; cursor: pointer; justify-content: space-between;">
+                        <span class="flag-icon flag-icon-fra"></span>
+                        <a href="" style="text-decoration: none; color: #17498e; position: relative; right: 10px;">
+                            <p>Vierville-sur-Mer
+                            </p>
+                        </a>
+                        <a href="" style="text-decoration: none; color: gray;">
+                            <p style="text-align: right;">from</p>
+                        </a>
+                    </div>
+                    <a href="" style="text-decoration: none; color: white; background-color:#008cba;
+             width:200px; border: 1px solid white; margin: auto; text-align: center;">🔍Discover</a>
                 </div>
-                <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    NG20 8RY
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 13px;">
-                    DE1 0NQ
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                BN1 6WH
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SK14 4TU
-            </a>
             </div>
-            <div style="display: flex; gap:7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                WC1X 0HD
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SN38 1NW 
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                E17 9RD
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                WA5 9QG
-            </a>
-            </div>
-            <div style="display: flex; gap:7px;">
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                NP11 4RB
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                IV11 8YS
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                CV34 4LL
-            </a>
-            <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                SA6 7JL
-            </a>
-            </div>
-            <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    EH54 0HH
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SA99 1AB
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    ST4 5BW
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BN3 8EZ
-                </a>
-            </div>
-            <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    EX2 7JH
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SA99 1ZW
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BN99 6RB
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    EC1A 1BB
-                </a>
+        </section>
+        <section style="display: flex; flex-direction: column; margin-top:50px; padding: 7px;">
+            <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: normal;">Popular
+                StudentId</h3>
+            <div style="display: flex; flex-direction: column;  gap:1px;">
+                <div style="display: flex; gap:7px;">
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        SA99 1DU
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        W1A 1AA
+                    </a>
                 </div>
                 <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    M14 4TY
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    LE87 2GA
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    CF10 4GA
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    LE4 6JL
-                </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        SW1A 1AA
+                    </a>
                 </div>
                 <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    S60 1AA
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    BH16 6FH
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    NE98 1ZZ
-                </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        WC2N 5DU
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        LE87 2BB
+                    </a>
                 </div>
                 <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    M21 9NP
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    DE12 6RE
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    NW8 0EG 
-                </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:35px;">
+                        SL6 3QQ
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        BD1 1AH
+                    </a>
                 </div>
                 <div style="display: flex; gap:7px;">
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SA99 1BN
-                </a>
-                <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
-                    SA99 1AF
-                </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        WC2H 9JQ
+                    </a>
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        EC1V 2NX
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href="" style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size:30px;">
+                        PO16 7GZ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
+                        B61 7HA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
+                        BA3 4YF
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 20px; padding-top:5px;">
+                        KY11 8ST
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DY13 0NW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        L20 7YW
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WS13 8UR
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SR43 2SB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1BT
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        UB7 0LB
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SW1A 2AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PR3 1XB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BT2 8HQ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        G51 1DA
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        B15 2TE
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EH3 1GE
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SW1W 0NY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M9 5SD
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M19 3AD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PR25 9FR
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1YW
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        AL10 9WN
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SW1A 0AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV3 9SD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        IG11 7RN
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        W1A 6US
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SR5 9QY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        N1 7GU
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NN18 8UA
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1DU
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NE12 8NW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DL98 1AT
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BT1 9WY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DA15 0BQ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EC1A 1AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M5 4WT
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SO14 0AG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PE32 1TE
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        HD8 1DY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WV98 2AD
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DL1 9AG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV4 7ES
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV21 9FU
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BT1 9PT
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        N15 6RS
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BS9 0DP
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M1 1AG
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN21 9AT
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        E1 6AN
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        E1 6JJ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BR1 3BX
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WV14 4BZ
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        PR3 1NJ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV4 7AL
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SY5 8NF
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BH16 6FA
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WA7 9DY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NE38 9EX
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M4 6GA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        FY8 5DX
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NG20 8RY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 13px;">
+                        DE1 0NQ
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN1 6WH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SK14 4TU
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WC1X 0HD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SN38 1NW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        E17 9RD
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        WA5 9QG
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NP11 4RB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        IV11 8YS
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CV34 4LL
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA6 7JL
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EH54 0HH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1AB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        ST4 5BW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN3 8EZ
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EX2 7JH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1ZW
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BN99 6RB
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        EC1A 1BB
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M14 4TY
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        LE87 2GA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        CF10 4GA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        LE4 6JL
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        S60 1AA
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        BH16 6FH
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NE98 1ZZ
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        M21 9NP
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        DE12 6RE
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        NW8 0EG
+                    </a>
+                </div>
+                <div style="display: flex; gap:7px;">
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1BN
+                    </a>
+                    <a href=""
+                        style="background-color:#dddddd; text-decoration: none; color: #008cba; font-size: 18px;">
+                        SA99 1AF
+                    </a>
                 </div>
             </div>
         </section>
         <section style="background-color:rgb(216, 216, 216); padding:25px; border: 2px solid white;
         display: flex; flex-direction: column; width:370px; margin: auto; gap: 20px;" id="f-mobile">
-        <p style="text-align: center; color: black; font-weight: bold;">Use Check My Student Id to find out all the key<br/>
-             information for your local postcode.</p>
-    <p style="text-align: center;">Find out typical <span style="font-weight: bold;">house prices, council tax bands<br/>
-         and business rateable values.</span></p>
-    <p style="text-align: center;">See who represents you in <span style="font-weight: bold;">parliament and your<br/>
-         local councils,</span> and discover how Ofsted has rated local
-         <span style="font-weight: bold;">schools</span></p>
-    <p style="text-align: center;">Check whether <span style="font-weight: bold;">superfast broadband</span> is available,<br/>
-         and see how popular it is.</p>
-    <p style="text-align: center;">See where your postcode is on a <span style="font-weight: bold;">map.</span><p>
-    <p style="text-align: center;">Find the <span style="font-weight: bold;">nearest postcodes</span> to where you are<br/>
-         right now.</p>
-    <p style="text-align: center; font-weight: bold;">Read what other people have said about your<br/>
-         postcode, and leave your own comments for<br/> others to read.</p>
-       </section>
-       <section style="background-color: #222222; display: flex; gap: 50px;
-        padding: 10px; justify-content: center; margin-top:20px; padding-top: 30px; padding-bottom: 30px; flex-direction: column;" id="ff-mobile">
-    <div style="display: flex; flex-direction: column;">
-    <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif;" class="footer_links">Search</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes by County</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcodes Near Me</a>
-    <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif ;" class="footer_links">Postcodes by Introduction Date</a>
-    <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Lottery</a>
+            <p style="text-align: center; color: black; font-weight: bold;">Use Check My Student Id to find out all the
+                key<br />
+                information for your local postcode.</p>
+            <p style="text-align: center;">Find out typical <span style="font-weight: bold;">house prices, council tax
+                    bands<br />
+                    and business rateable values.</span></p>
+            <p style="text-align: center;">See who represents you in <span style="font-weight: bold;">parliament and
+                    your<br />
+                    local councils,</span> and discover how Ofsted has rated local
+                <span style="font-weight: bold;">schools</span>
+            </p>
+            <p style="text-align: center;">Check whether <span style="font-weight: bold;">superfast broadband</span> is
+                available,<br />
+                and see how popular it is.</p>
+            <p style="text-align: center;">See where your postcode is on a <span style="font-weight: bold;">map.</span>
+            <p>
+            <p style="text-align: center;">Find the <span style="font-weight: bold;">nearest postcodes</span> to where
+                you are<br />
+                right now.</p>
+            <p style="text-align: center; font-weight: bold;">Read what other people have said about your<br />
+                postcode, and leave your own comments for<br /> others to read.</p>
+        </section>
+        <section
+            style="background-color: #222222; display: flex; gap: 50px;
+        padding: 10px; justify-content: center; margin-top:20px; padding-top: 30px; padding-bottom: 30px; flex-direction: column;"
+            id="ff-mobile">
+            <div style="display: flex; flex-direction: column;">
+                <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif;"
+                    class="footer_links">Search</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcodes by County</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcodes Near Me</a>
+                <a href="" style="color: white; text-decoration: none; font-family:Arial, Helvetica, sans-serif ;"
+                    class="footer_links">Postcodes by Introduction Date</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcode Lottery</a>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcode Map by User Type</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Postcode Map by Use Category</a>
+                <a href=""
+                    style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Postcode Map
+                    by Council Tax Band</a>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">About this Website</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Disclaimer and Limitations</a>
+                <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;"
+                    class="footer_links">Privacy Policy</a>
+            </div>
+        </section>
+        <footer
+            style="display: flex; flex-direction: column; align-items: center; margin-top:20px; gap: 15px; margin-bottom: 20px;"
+            id="fff-mobile">
+            <h3>Check My Student Id</h3>
+            <p>CheckMyStudentId.UK is a <a href="" style="color: #008cba; text-decoration: none;">Good Stuff</a>
+                website.</p>
+        </footer>
     </div>
-    <div style="display: flex; flex-direction: column;">
-        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by User Type</a>
-        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Postcode Map by Use Category</a>
-        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Postcode Map by Council Tax Band</a>
+
     </div>
-    <div style="display: flex; flex-direction: column;">
-        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">About this Website</a>
-        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Disclaimer and Limitations</a>
-        <a href="" style="color: white; text-decoration: none; font-family: Arial, Helvetica, sans-serif;" class="footer_links">Privacy Policy</a>
-    </div>
-       </section>
-       <footer style="display: flex; flex-direction: column; align-items: center; margin-top:20px; gap: 15px; margin-bottom: 20px;" id="fff-mobile">
-        <h3>Check My Student Id</h3>
-        <p>CheckMyStudentId.UK is a <a href="" style="color: #008cba; text-decoration: none;">Good Stuff</a> website.</p>
-        </footer>   
-        </div> 
-    
-</div>
 </body>
 <script src="./index.js"></script>
+
 </html>
